@@ -280,6 +280,7 @@
 		B8585AA519F560D400C8DE19 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8585AA419F560D400C8DE19 /* libwebsockets.a */; };
 		B8585AAB19F560D400C8DE19 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AAA19F560D400C8DE19 /* AppDelegate.cpp */; };
 		B8585AAE19F560D400C8DE19 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AAD19F560D400C8DE19 /* HelloWorldScene.cpp */; };
+		B8585AB719F561F800C8DE19 /* SpriteByUrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +874,8 @@
 		B8585AAA19F560D400C8DE19 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		B8585AAC19F560D400C8DE19 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		B8585AAD19F560D400C8DE19 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteByUrl.cpp; path = Classes/SpriteByUrl.cpp; sourceTree = "<group>"; };
+		B8585AB619F561F800C8DE19 /* SpriteByUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteByUrl.h; path = Classes/SpriteByUrl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2093,12 +2096,22 @@
 		B8585AA819F560D400C8DE19 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B8585AB419F561BD00C8DE19 /* SpriteByUrl */,
 				B8585AA919F560D400C8DE19 /* AppDelegate.h */,
 				B8585AAA19F560D400C8DE19 /* AppDelegate.cpp */,
 				B8585AAC19F560D400C8DE19 /* HelloWorldScene.h */,
 				B8585AAD19F560D400C8DE19 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		B8585AB419F561BD00C8DE19 /* SpriteByUrl */ = {
+			isa = PBXGroup;
+			children = (
+				B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */,
+				B8585AB619F561F800C8DE19 /* SpriteByUrl.h */,
+			);
+			name = SpriteByUrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2366,6 +2379,7 @@
 				B858583419F560D200C8DE19 /* CCFileUtils.cpp in Sources */,
 				B858590A19F560D300C8DE19 /* CCTexturePVR.cpp in Sources */,
 				B858584819F560D200C8DE19 /* CCApplication.mm in Sources */,
+				B8585AB719F561F800C8DE19 /* SpriteByUrl.cpp in Sources */,
 				B85859B019F560D400C8DE19 /* CCControlHuePicker.cpp in Sources */,
 				B858583119F560D200C8DE19 /* CCEGLViewProtocol.cpp in Sources */,
 				B85857E119F560D100C8DE19 /* utility.c in Sources */,
