@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include "SpriteByUrl.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -63,7 +64,9 @@ bool HelloWorld::init()
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+    SpriteByUrl *pSprite=SpriteByUrl::createByUrl("http://neoimaging.beareyes.com.cn/png2/ni_png_2_1518.png","HelloWorld.png");
+    
+//    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
     pSprite->setPosition( ccp(size.width/2, size.height/2) );

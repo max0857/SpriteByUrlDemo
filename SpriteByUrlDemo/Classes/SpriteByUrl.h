@@ -11,10 +11,11 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "cocos-ext.h"
 
 using namespace std;
 using namespace cocos2d;
-
+using namespace extension;
 
 class SpriteByUrl : public CCSprite{
     
@@ -24,15 +25,11 @@ class SpriteByUrl : public CCSprite{
     
 public:
     
-    /**
-     设置图片未加载完成时的默认图片
-     */
-    static void setDefaultImage(const char *fileName);
     
     /**
      
      */
-    static SpriteByUrl* createByUrl(const char* url);
+    static SpriteByUrl* createByUrl(const char* url,const char* defaultImage);
     
     static SpriteByUrl* create(const char *pszFileName);
     
@@ -45,11 +42,22 @@ private:
     /**
      判断某个url路径指向图片是否存在缓存中
      */
-    bool checkUrlImageStatus(const char *url);
+    bool checkUrlImageStatus(const char *fileName);
+    
+    void downloadImage(const char *url);
+    
+    
+    void changeImage(const char* fileName);
+    
+    void SendHttpRequest(const char* url,const char* filename);
+    void HttpRequestComplete(CCHttpClient *sender, CCHttpResponse *response);
+    
+    void checkDone();
     
 private:
     
-    static string m_defaultImageFileName;
+    string m_urlMD5;
+    bool isDone;
 };
 
 #endif /* defined(__CheatGame__SpriteByUrl__) */

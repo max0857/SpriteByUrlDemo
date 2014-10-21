@@ -281,6 +281,7 @@
 		B8585AAB19F560D400C8DE19 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AAA19F560D400C8DE19 /* AppDelegate.cpp */; };
 		B8585AAE19F560D400C8DE19 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AAD19F560D400C8DE19 /* HelloWorldScene.cpp */; };
 		B8585AB719F561F800C8DE19 /* SpriteByUrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */; };
+		B8585ABA19F5ECC100C8DE19 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8585AB819F5ECC100C8DE19 /* md5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -876,6 +877,8 @@
 		B8585AAD19F560D400C8DE19 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteByUrl.cpp; path = Classes/SpriteByUrl.cpp; sourceTree = "<group>"; };
 		B8585AB619F561F800C8DE19 /* SpriteByUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteByUrl.h; path = Classes/SpriteByUrl.h; sourceTree = "<group>"; };
+		B8585AB819F5ECC100C8DE19 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cpp; path = Classes/md5.cpp; sourceTree = "<group>"; };
+		B8585AB919F5ECC100C8DE19 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = Classes/md5.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2108,6 +2111,8 @@
 		B8585AB419F561BD00C8DE19 /* SpriteByUrl */ = {
 			isa = PBXGroup;
 			children = (
+				B8585AB819F5ECC100C8DE19 /* md5.cpp */,
+				B8585AB919F5ECC100C8DE19 /* md5.h */,
 				B8585AB519F561F800C8DE19 /* SpriteByUrl.cpp */,
 				B8585AB619F561F800C8DE19 /* SpriteByUrl.h */,
 			);
@@ -2330,6 +2335,7 @@
 				B85857DB19F560D100C8DE19 /* plane.c in Sources */,
 				B858585219F560D200C8DE19 /* CCEGLView.mm in Sources */,
 				B8585A1419F560D400C8DE19 /* AttachmentLoader.cpp in Sources */,
+				B8585ABA19F5ECC100C8DE19 /* md5.cpp in Sources */,
 				B8585A6B19F560D400C8DE19 /* cpDampedSpring.c in Sources */,
 				B85859A619F560D300C8DE19 /* CCControl.cpp in Sources */,
 				B858579419F560D100C8DE19 /* CCObject.cpp in Sources */,
@@ -2529,7 +2535,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"SpriteByUrlDemo/libs/Chipmunk/include/chipmunk\"";
@@ -2555,7 +2560,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"SpriteByUrlDemo/libs/Chipmunk/include/chipmunk\"";
@@ -2583,6 +2587,7 @@
 				B8585AB319F560D400C8DE19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
